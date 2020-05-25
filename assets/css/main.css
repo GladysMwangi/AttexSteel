@@ -1791,6 +1791,10 @@
 
 /* Basic */
 
+	@-ms-viewport {
+		width: device-width;
+	}
+
 	body {
 		background: #fff;
 	}
@@ -1828,6 +1832,54 @@
 			border-bottom-color: transparent !important;
 			color: #6bd4c8;
 		}
+
+		a.special:not(.button) {
+			text-decoration: none;
+			border-bottom: 0;
+			display: block;
+			font-family: Raleway, Helvetica, sans-serif;
+			font-size: 0.8em;
+			font-weight: 700;
+			letter-spacing: 0.1em;
+			margin: 0 0 2em 0;
+			text-transform: uppercase;
+		}
+			a.special:not(.button):before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
+
+			a.special:not(.button):before {
+				-moz-transition: background-color 0.2s ease-in-out;
+				-webkit-transition: background-color 0.2s ease-in-out;
+				-ms-transition: background-color 0.2s ease-in-out;
+				transition: background-color 0.2s ease-in-out;
+				border-radius: 100%;
+				border: solid 2px rgba(255, 255, 255, 0.125);
+				content: '\f105';
+				display: inline-block;
+				font-size: 1.25em;
+				height: 2em;
+				line-height: 1.65em;
+				margin-right: 0.85em;
+				text-align: center;
+				text-indent: 0.15em;
+				vertical-align: middle;
+				width: 2em;
+			}
+
+			a.special:not(.button):hover:before {
+				background-color: rgba(255, 255, 255, 0.025);
+			}
+
+			a.special:not(.button):active:before {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
+
 
 	strong, b {
 		color: #555;
