@@ -3033,7 +3033,7 @@
 
 		}
 
-		@media screen and (max-width: 640px) {
+		@media screen and (max-width: 736px) {
 
 			#header nav a[href="#menu"] {
 				width: 4em;
