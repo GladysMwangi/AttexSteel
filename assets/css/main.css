@@ -3002,11 +3002,11 @@
 				visibility: hidden;
 			}
 
-		@media screen and (max-width: 1140px) {
+		@media screen and (max-width: 1680px) {
 
 			#header {
-				height: 2.75em;
-				line-height: 2.75em;
+				height: 3em;
+				line-height: 3em;
 			}
 
 				#header nav {
