@@ -1791,10 +1791,6 @@
 
 /* Basic */
 
-	@-ms-viewport {
-		width: device-width;
-	}
-
 	body {
 		background: #fff;
 	}
